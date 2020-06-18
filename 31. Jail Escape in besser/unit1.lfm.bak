@@ -1,0 +1,288 @@
+object Form1: TForm1
+  Left = 811
+  Height = 500
+  Top = 130
+  Width = 700
+  Caption = 'Labyrinth Tower'
+  ClientHeight = 500
+  ClientWidth = 700
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnResize = FormResize
+  LCLVersion = '1.6.0.4'
+  WindowState = wsMaximized
+  object Label1: TLabel
+    Left = 500
+    Height = 18
+    Top = 8
+    Width = 195
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Steuerung'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 500
+    Height = 16
+    Top = 32
+    Width = 195
+    AutoSize = False
+    Caption = 'Q : '#9#9'hoch und links'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 500
+    Height = 16
+    Top = 56
+    Width = 195
+    AutoSize = False
+    Caption = 'E : '#9#9'hoch und rechts'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 500
+    Height = 16
+    Top = 80
+    Width = 195
+    AutoSize = False
+    Caption = 'A : '#9#9'runter und links'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 500
+    Height = 16
+    Top = 104
+    Width = 195
+    AutoSize = False
+    Caption = 'D : '#9#9'runter und rechts'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 500
+    Height = 16
+    Top = 128
+    Width = 195
+    AutoSize = False
+    Caption = 'Pfeil hoch: '#9'hoch'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 500
+    Height = 16
+    Top = 152
+    Width = 195
+    AutoSize = False
+    Caption = 'Pfeil rechts:'#9'rechts'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 500
+    Height = 16
+    Top = 176
+    Width = 195
+    AutoSize = False
+    Caption = 'Pfeil unten:'#9'runter'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 500
+    Height = 16
+    Top = 200
+    Width = 195
+    AutoSize = False
+    Caption = 'Pfeil links:'#9'links'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 500
+    Height = 16
+    Top = 340
+    Width = 195
+    AutoSize = False
+    Caption = 'Labyrinth Tower Level'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 500
+    Height = 16
+    Top = 240
+    Width = 195
+    AutoSize = False
+    Caption = 'Wände können Illusionen sein'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 500
+    Height = 25
+    Top = 420
+    Width = 195
+    Caption = 'Neues Level'
+    Enabled = False
+    OnClick = Button1Click
+    TabOrder = 0
+    Visible = False
+  end
+  object Label12: TLabel
+    Left = 500
+    Height = 16
+    Top = 400
+    Width = 195
+    AutoSize = False
+    Caption = 'Wenn Level zu schwer'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object Label13: TLabel
+    Left = 500
+    Height = 16
+    Top = 260
+    Width = 195
+    AutoSize = False
+    Caption = 'Fallen ändern das Level'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label14: TLabel
+    Left = 500
+    Height = 16
+    Top = 280
+    Width = 195
+    AutoSize = False
+    Caption = 'Das goldene Feld ist das Ziel'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label15: TLabel
+    Left = 500
+    Height = 16
+    Top = 450
+    Width = 195
+    AutoSize = False
+    Caption = 'Nicht zu oft Neustarten'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    left = 74
+    top = 15
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer2Timer
+    left = 120
+    top = 15
+  end
+  object Timer3: TTimer
+    Enabled = False
+    Interval = 10000
+    OnTimer = Timer3Timer
+    left = 160
+    top = 16
+  end
+end

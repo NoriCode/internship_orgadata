@@ -1,0 +1,57 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Edit1: TEdit;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  celsuis, fahrenheit:double;
+begin
+  if (RadioButton1.Checked = True)then
+  begin
+     fahrenheit:= StrtoFloat(edit1.text);
+     celsuis:=(fahrenheit-32)*5/9;
+     Label2.caption:='Ergebnis: '+FloattoStr(celsuis)+ ' celsuis';
+  end
+  else
+  begin
+     celsuis:= StrtoFloat(edit1.text);
+     fahrenheit:=celsuis*9/5+32;
+     Label2.caption:='Ergebnis: '+FloattoStr(fahrenheit)+ ' Fahrenheit';
+  end;
+end;
+
+end.
+

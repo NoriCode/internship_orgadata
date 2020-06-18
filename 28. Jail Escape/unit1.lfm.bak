@@ -1,0 +1,50 @@
+object Form1: TForm1
+  Left = 849
+  Height = 533
+  Top = 150
+  Width = 768
+  Caption = 'Jail Escape'
+  ClientHeight = 533
+  ClientWidth = 768
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  LCLVersion = '1.6.0.4'
+  object Button1: TButton
+    Left = 544
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Neues Spiel'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 632
+    Height = 32
+    Top = 8
+    Width = 115
+    Caption = 'Punkte: 0'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -27
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = Timer1Timer
+    left = 704
+    top = 86
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer2Timer
+    left = 704
+    top = 144
+  end
+end

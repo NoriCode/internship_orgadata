@@ -1,0 +1,146 @@
+object Form1: TForm1
+  Left = 1086
+  Height = 485
+  Top = 114
+  Width = 501
+  Caption = 'Form1'
+  ClientHeight = 485
+  ClientWidth = 501
+  LCLVersion = '1.6.0.4'
+  object Button1: TButton
+    Left = 13
+    Height = 25
+    Top = 140
+    Width = 70
+    Caption = '+'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 72
+    Height = 23
+    Top = 20
+    Width = 108
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 72
+    Height = 23
+    Top = 60
+    Width = 108
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 96
+    Height = 25
+    Top = 140
+    Width = 70
+    Caption = '-'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 176
+    Height = 25
+    Top = 140
+    Width = 70
+    Caption = '*'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 256
+    Height = 25
+    Top = 140
+    Width = 70
+    Caption = '/'
+    OnClick = Button4Click
+    TabOrder = 5
+  end
+  object Button5: TButton
+    Left = 13
+    Height = 25
+    Top = 172
+    Width = 70
+    Caption = 'Sin'
+    OnClick = Button5Click
+    TabOrder = 6
+  end
+  object Button6: TButton
+    Left = 96
+    Height = 25
+    Top = 172
+    Width = 70
+    Caption = 'Cos'
+    OnClick = Button6Click
+    TabOrder = 7
+  end
+  object Button7: TButton
+    Left = 176
+    Height = 25
+    Top = 172
+    Width = 70
+    Caption = 'Tan'
+    OnClick = Button7Click
+    TabOrder = 8
+  end
+  object Label1: TLabel
+    Left = 13
+    Height = 15
+    Top = 20
+    Width = 32
+    Caption = 'Zahl 1'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 13
+    Height = 15
+    Top = 56
+    Width = 32
+    Caption = 'Zahl 2'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 13
+    Height = 15
+    Top = 104
+    Width = 45
+    Caption = 'Ergebnis'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 79
+    Height = 15
+    Top = 108
+    Width = 105
+    Caption = '                                   '
+    ParentColor = False
+  end
+  object Button8: TButton
+    Left = 256
+    Height = 25
+    Top = 172
+    Width = 70
+    Caption = 'Wurzel'
+    OnClick = Button8Click
+    TabOrder = 9
+  end
+  object Button9: TButton
+    Left = 13
+    Height = 25
+    Top = 208
+    Width = 70
+    Caption = 'Quadrieren'
+    OnClick = Button9Click
+    TabOrder = 10
+  end
+  object Button10: TButton
+    Left = 96
+    Height = 25
+    Top = 208
+    Width = 70
+    Caption = 'Potenz'
+    OnClick = Button10Click
+    TabOrder = 11
+  end
+end

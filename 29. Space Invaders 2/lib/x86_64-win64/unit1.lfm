@@ -1,0 +1,113 @@
+object Form1: TForm1
+  Left = 979
+  Height = 900
+  Top = 99
+  Width = 1600
+  Caption = 'Space Invaders 2'
+  ClientHeight = 900
+  ClientWidth = 1600
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  LCLVersion = '1.6.0.4'
+  object Image1: TImage
+    Left = 0
+    Height = 900
+    Top = 0
+    Width = 1600
+    Transparent = True
+    Visible = False
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 75
+    Top = 0
+    Width = 1600
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Space Invaders'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -64
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsUnderline]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 0
+    Height = 5
+    Top = 760
+    Width = 1600
+    AutoSize = False
+    Color = clWhite
+    ParentColor = False
+    Transparent = False
+  end
+  object Image3: TImage
+    Left = 72
+    Height = 8
+    Top = 901
+    Width = 8
+  end
+  object Button3: TButton
+    Left = 750
+    Height = 25
+    Top = 80
+    Width = 100
+    Caption = 'Spiel starten'
+    OnClick = Button3Click
+    TabOrder = 0
+  end
+  object Label3: TLabel
+    Left = 0
+    Height = 5
+    Top = 855
+    Width = 1600
+    AutoSize = False
+    Color = clWhite
+    ParentColor = False
+    Transparent = False
+  end
+  object Button1: TButton
+    Left = 120
+    Height = 25
+    Top = 865
+    Width = 100
+    Caption = 'Neues Spiel'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Image2: TImage
+    Left = 772
+    Height = 69
+    Top = 775
+    Width = 57
+    Transparent = True
+  end
+  object Label4: TLabel
+    Left = 230
+    Height = 25
+    Top = 865
+    Width = 200
+    AutoSize = False
+    Caption = 'Punkte: 0'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -24
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = Timer1Timer
+    left = 8
+    top = 8
+  end
+end

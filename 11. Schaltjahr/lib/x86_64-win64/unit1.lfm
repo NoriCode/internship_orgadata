@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 1088
+  Height = 240
+  Top = 125
+  Width = 246
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 246
+  LCLVersion = '1.6.0.4'
+  object Button1: TButton
+    Left = 16
+    Height = 25
+    Top = 184
+    Width = 80
+    Caption = 'berechnen'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 64
+    Width = 20
+    Caption = 'von'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 16
+    Height = 23
+    Top = 88
+    Width = 80
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 120
+    Width = 15
+    Caption = 'bis'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 16
+    Height = 23
+    Top = 144
+    Width = 80
+    TabOrder = 2
+  end
+  object ListBox1: TListBox
+    Left = 128
+    Height = 216
+    Top = 16
+    Width = 100
+    ItemHeight = 0
+    TabOrder = 3
+  end
+  object Label3: TLabel
+    Left = 13
+    Height = 24
+    Top = 18
+    Width = 101
+    Caption = 'Schaltjahr'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+end

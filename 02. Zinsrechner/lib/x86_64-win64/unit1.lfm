@@ -1,0 +1,74 @@
+object Form1: TForm1
+  Left = 1113
+  Height = 240
+  Top = 118
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object Button1: TButton
+    Left = 7
+    Height = 25
+    Top = 112
+    Width = 169
+    Caption = 'Jahreszins'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 96
+    Height = 23
+    Top = 8
+    Width = 80
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 96
+    Height = 23
+    Top = 40
+    Width = 80
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 96
+    Height = 23
+    Top = 72
+    Width = 80
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 7
+    Height = 15
+    Top = 8
+    Width = 59
+    Caption = 'Startkapital'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 40
+    Width = 42
+    Caption = 'Zinssatz'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 7
+    Height = 15
+    Top = 72
+    Width = 41
+    Caption = 'Laufzeit'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 8
+    Height = 25
+    Top = 144
+    Width = 168
+    Caption = 'ZinsesZins'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+end

@@ -1,0 +1,61 @@
+object Form1: TForm1
+  Left = 1288
+  Height = 240
+  Top = 161
+  Width = 320
+  Caption = 'Omsche Gesetz'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.6.0.4'
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 8
+    Width = 80
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 37
+    Width = 80
+    Caption = 'U'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 8
+    Height = 23
+    Top = 80
+    Width = 80
+    TabOrder = 2
+    Text = 'Edit2'
+  end
+  object Button2: TButton
+    Left = 8
+    Height = 25
+    Top = 112
+    Width = 80
+    Caption = 'R'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Edit3: TEdit
+    Left = 8
+    Height = 23
+    Top = 160
+    Width = 80
+    TabOrder = 4
+    Text = 'Edit3'
+  end
+  object Button3: TButton
+    Left = 8
+    Height = 25
+    Top = 192
+    Width = 80
+    Caption = 'I'
+    OnClick = Button3Click
+    TabOrder = 5
+  end
+end

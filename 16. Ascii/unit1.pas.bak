@@ -1,0 +1,61 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    ComboBox1: TComboBox;
+    Edit1: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  eingabezeichen, ergebnis2:String;
+  eingabecode, ergebnis1:integer;
+
+begin
+  case ComboBox1.itemindex of
+       0:
+         begin
+              eingabezeichen:=Edit1.Text;
+              ergebnis1:=Ord(eingabezeichen[1]);
+              Label4.caption:=InttoStr(ergebnis1);
+         end;//ende case 0
+       1:
+         begin
+              eingabecode:=StrtoInt(Edit1.Text);
+              ergebnis2:=Chr(eingabecode);
+              Label4.caption:=ergebnis2;
+         end;//ende case 0
+  end;
+end;
+
+end.
+

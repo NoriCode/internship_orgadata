@@ -1,0 +1,151 @@
+object Form1: TForm1
+  Left = 1063
+  Height = 700
+  Top = 115
+  Width = 600
+  Caption = 'Racer VS'
+  ClientHeight = 700
+  ClientWidth = 600
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  LCLVersion = '1.6.0.4'
+  object Image1: TImage
+    Left = 256
+    Height = 100
+    Top = 312
+    Width = 50
+  end
+  object Button1: TButton
+    Left = 256
+    Height = 25
+    Top = 70
+    Width = 80
+    Caption = 'Neues Spiel'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 256
+    Height = 15
+    Top = 135
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Image2: TImage
+    Left = 306
+    Height = 100
+    Top = 312
+    Width = 50
+  end
+  object Label2: TLabel
+    Left = 256
+    Height = 15
+    Top = 165
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Image3: TImage
+    Left = 250
+    Height = 100
+    Top = 600
+    Width = 50
+    Transparent = True
+  end
+  object Image4: TImage
+    Left = 300
+    Height = 100
+    Top = 600
+    Width = 50
+    Transparent = True
+  end
+  object Label3: TLabel
+    Left = 256
+    Height = 15
+    Top = 120
+    Width = 88
+    AutoSize = False
+    Caption = 'Punkte Spieler 1:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 256
+    Height = 15
+    Top = 150
+    Width = 88
+    AutoSize = False
+    Caption = 'Punkte Spieler 2:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 284
+    Height = 15
+    Top = 584
+    Width = 32
+    Alignment = taCenter
+    Caption = 'Leben'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 256
+    Height = 15
+    Top = 223
+    Width = 12
+    Caption = '10'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 256
+    Height = 15
+    Top = 253
+    Width = 12
+    Caption = '10'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 256
+    Height = 15
+    Top = 208
+    Width = 88
+    AutoSize = False
+    Caption = 'Speed Spieler 1:'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 256
+    Height = 15
+    Top = 238
+    Width = 88
+    AutoSize = False
+    Caption = 'Speed Spieler 2:'
+    ParentColor = False
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer1Timer
+    left = 64
+    top = 248
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer2Timer
+    left = 104
+    top = 248
+  end
+  object Timer3: TTimer
+    Interval = 10
+    OnTimer = Timer3Timer
+    left = 152
+    top = 248
+  end
+  object Timer4: TTimer
+    Interval = 10000
+    OnTimer = Timer4Timer
+    left = 192
+    top = 248
+  end
+end

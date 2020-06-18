@@ -1,0 +1,175 @@
+object Form1: TForm1
+  Left = 1214
+  Height = 500
+  Top = 112
+  Width = 694
+  Caption = 'Labyrinth Tower'
+  ClientHeight = 500
+  ClientWidth = 694
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  LCLVersion = '1.6.0.4'
+  object Label1: TLabel
+    Left = 500
+    Height = 18
+    Top = 8
+    Width = 71
+    Caption = 'Steuerung'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 500
+    Height = 16
+    Top = 32
+    Width = 180
+    Caption = 'Q : '#9#9'hoch und links'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 500
+    Height = 16
+    Top = 56
+    Width = 189
+    Caption = 'E : '#9#9'hoch und rechts'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 500
+    Height = 16
+    Top = 80
+    Width = 185
+    Caption = 'A : '#9#9'runter und links'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 500
+    Height = 16
+    Top = 104
+    Width = 194
+    Caption = 'D : '#9#9'runter und rechts'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 500
+    Height = 16
+    Top = 128
+    Width = 124
+    Caption = 'Pfeil hoch: '#9'hoch'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 500
+    Height = 16
+    Top = 152
+    Width = 132
+    Caption = 'Pfeil rechts:'#9'rechts'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 500
+    Height = 16
+    Top = 176
+    Width = 129
+    Caption = 'Pfeil unten:'#9'runter'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 500
+    Height = 16
+    Top = 200
+    Width = 123
+    Caption = 'Pfeil links:'#9'links'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 500
+    Height = 16
+    Top = 320
+    Width = 123
+    Caption = 'Labyrinth Tower Level'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    left = 74
+    top = 15
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer2Timer
+    left = 120
+    top = 15
+  end
+end

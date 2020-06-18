@@ -1,0 +1,66 @@
+object Form1: TForm1
+  Left = 1250
+  Height = 261
+  Top = 151
+  Width = 262
+  Caption = 'Form1'
+  ClientHeight = 261
+  ClientWidth = 262
+  LCLVersion = '1.6.0.4'
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 23
+    Caption = 'Von:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 40
+    Height = 23
+    Top = 8
+    Width = 80
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 144
+    Height = 15
+    Top = 8
+    Width = 18
+    Caption = 'Bis:'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 168
+    Height = 23
+    Top = 8
+    Width = 80
+    TabOrder = 1
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Height = 176
+    Top = 40
+    Width = 244
+    ItemHeight = 0
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 224
+    Width = 75
+    Caption = 'randomize'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 177
+    Height = 25
+    Top = 224
+    Width = 75
+    Caption = 'sortieren'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+end

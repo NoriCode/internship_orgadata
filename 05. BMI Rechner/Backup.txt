@@ -1,0 +1,108 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,math;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  gewicht, groesse, bmi:double;
+  bmi2:integer;
+begin
+  gewicht:= StrtoFloat(edit1.text);
+  groesse:= StrtoFloat(edit2.text);
+  bmi:= gewicht/Power((groesse/100),2);
+  bmi:= bmi*10;
+  bmi2:= round(bmi);
+  bmi:= bmi2/10;
+
+
+  Label5.caption:='Ihr ermittelter BMI: ' +FloattoStr(bmi);
+
+  
+  if (RadioButton1.Checked = True)then
+  begin
+    if bmi<20then
+    begin
+      Label6.caption:='Sie haben Untergewicht';
+    end
+    else if bmi<25then // <20 ende und <25 Anfang
+    begin
+      Label6.caption:='Sie haben Normalgewicht';
+    end
+    else if bmi<30then // <25 ende und <30 Anfang
+    begin
+      Label6.caption:='Sie haben Übergewicht';
+    end
+    else if bmi<30then // <30 ende und <40 Anfang
+    begin
+      Label6.caption:='Sie haben Adipositas';
+    end
+    else // <40 ende
+    begin
+      Label6.caption:='Sie haben starke Adipositas';
+    end//>40 ende
+  end//Radio 1 check ende
+  else
+  begin
+    if bmi<19then
+    begin
+      Label6.caption:='Sie haben Untergewicht';
+    end
+    else if bmi<24then // <19 ende und <24 Anfang
+    begin
+      Label6.caption:='Sie haben Normalgewicht';
+    end
+    else if bmi<30then // <24 ende und <30 Anfang
+    begin
+      Label6.caption:='Sie haben Übergewicht';
+    end
+    else if bmi<30then // <30 ende und <40 Anfang
+    begin
+      Label6.caption:='Sie haben Adipositas';
+    end
+    else // <40 ende
+    begin
+      Label6.caption:='Sie haben starke Adipositas';
+    end//>40 ende
+  end
+end;
+
+end.

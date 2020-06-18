@@ -1,0 +1,215 @@
+object Form1: TForm1
+  Left = 682
+  Height = 850
+  Top = 111
+  Width = 930
+  Caption = 'Form1'
+  ClientHeight = 850
+  ClientWidth = 930
+  Color = clSilver
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  LCLVersion = '1.6.0.4'
+  object Label1: TLabel
+    Left = 150
+    Height = 75
+    Top = 8
+    Width = 636
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Road to Global'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -64
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsUnderline]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 100
+    Height = 25
+    Top = 800
+    Width = 75
+    Caption = 'Spiel Start'
+    Enabled = False
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 184
+    Height = 24
+    Top = 800
+    Width = 64
+    Caption = 'Punkte'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object Label3: TLabel
+    Left = 257
+    Height = 24
+    Top = 800
+    Width = 12
+    Caption = '0'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object Image1: TImage
+    Left = 16
+    Height = 28
+    Top = 150
+    Width = 70
+    Visible = False
+  end
+  object Image2: TImage
+    Left = 100
+    Height = 28
+    Top = 150
+    Width = 70
+    Visible = False
+  end
+  object Image3: TImage
+    Left = 184
+    Height = 28
+    Top = 150
+    Width = 70
+    Visible = False
+  end
+  object Image4: TImage
+    Left = 268
+    Height = 28
+    Top = 150
+    Width = 70
+    Visible = False
+  end
+  object Image5: TImage
+    Left = 16
+    Height = 28
+    Top = 192
+    Width = 70
+    Visible = False
+  end
+  object Image6: TImage
+    Left = 100
+    Height = 28
+    Top = 192
+    Width = 70
+    Visible = False
+  end
+  object Image7: TImage
+    Left = 184
+    Height = 28
+    Top = 192
+    Width = 70
+    Visible = False
+  end
+  object Image8: TImage
+    Left = 268
+    Height = 28
+    Top = 192
+    Width = 70
+    Visible = False
+  end
+  object Image9: TImage
+    Left = 16
+    Height = 28
+    Top = 234
+    Width = 70
+    Visible = False
+  end
+  object Image10: TImage
+    Left = 100
+    Height = 28
+    Top = 234
+    Width = 70
+    Visible = False
+  end
+  object Image11: TImage
+    Left = 184
+    Height = 28
+    Top = 234
+    Width = 70
+    Visible = False
+  end
+  object Image12: TImage
+    Left = 268
+    Height = 28
+    Top = 234
+    Width = 70
+    Visible = False
+  end
+  object Button3: TButton
+    Left = 369
+    Height = 25
+    Top = 96
+    Width = 75
+    Caption = 'Neues Spiel'
+    OnClick = Button3Click
+    TabOrder = 1
+  end
+  object Image13: TImage
+    Left = 16
+    Height = 28
+    Top = 745
+    Width = 70
+    Visible = False
+  end
+  object Label4: TLabel
+    Left = 0
+    Height = 2
+    Top = 736
+    Width = 930
+    AutoSize = False
+    Color = clWhite
+    ParentColor = False
+    Transparent = False
+    Visible = False
+  end
+  object Label5: TLabel
+    Left = 0
+    Height = 2
+    Top = 780
+    Width = 930
+    AutoSize = False
+    Color = clWhite
+    ParentColor = False
+    Transparent = False
+    Visible = False
+  end
+  object Image14: TImage
+    Left = 512
+    Height = 10
+    Top = 824
+    Width = 10
+    Visible = False
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = Timer1Timer
+    left = 8
+    top = 8
+  end
+  object Timer2: TTimer
+    Interval = 1
+    OnTimer = Timer2Timer
+    left = 48
+    top = 8
+  end
+end

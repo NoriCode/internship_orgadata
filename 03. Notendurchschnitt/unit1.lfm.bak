@@ -1,0 +1,88 @@
+object Form1: TForm1
+  Left = 1137
+  Height = 240
+  Top = 120
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.6.0.4'
+  object Button1: TButton
+    Left = 16
+    Height = 25
+    Top = 120
+    Width = 168
+    Caption = 'Notendurchschnitt berechnen'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 104
+    Height = 23
+    Top = 16
+    Width = 80
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 104
+    Height = 23
+    Top = 48
+    Width = 80
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 105
+    Height = 23
+    Top = 80
+    Width = 80
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 64
+    Caption = 'Mathematik'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 48
+    Width = 43
+    Caption = 'Deutsch'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 15
+    Top = 80
+    Width = 44
+    Caption = 'Englisch'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 15
+    Top = 168
+    Width = 103
+    Caption = 'Notendurchschnitt:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 144
+    Height = 15
+    Top = 168
+    Width = 6
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 15
+    Top = 192
+    Width = 34
+    Caption = 'Label6'
+    ParentColor = False
+  end
+end
